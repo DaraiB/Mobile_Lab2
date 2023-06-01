@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
 
             builder.setTitle("Результаты")
-            builder.setMessage("Уравнение имеет 2 корня: \n a1=" + kor1_norm + "\n a2=" + kor2_norm)
+            builder.setMessage("Уравнение имеет 2 корня: \n x1=" + kor1_norm + "\n x2=" + kor2_norm)
             builder.show()
         }
 
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
             var kor1_norm = kor1.toInt()
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Результаты")
-            builder.setMessage("Уравнение имеет 1 корень: \n a1="+ kor1_norm )
+            builder.setMessage("Уравнение имеет 1 корень: \n x1="+ kor1_norm )
             builder.show()
 
         }
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             var kor1 = (c1*-1)/b1
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Результаты")
-            builder.setMessage("Уравнение не является квадратным\n"+"a1="+ kor1)
+            builder.setMessage("Уравнение не является квадратным\n"+"x1="+ kor1)
             builder.show()
         }
         if ((a1 == (0.0).toFloat()) and (b1 == (0.0).toFloat())){
